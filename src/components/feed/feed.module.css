@@ -23,14 +23,14 @@
   }
 }
 
-.photo {
+.photo a {
   display: grid;
   border-radius: 0.2rem;
   overflow: hidden;
   cursor: pointer;
 }
 
-.photo > div {
+.photo img {
   grid-area: 1/1;
 }
 
@@ -51,7 +51,7 @@
   content: '';
   display: inline-block;
   margin-right: 0.25rem;
-  background: url('../../Assets/visualizacao.svg') no-repeat;
+  background: url('/assets/visualizacao.svg') no-repeat;
 }
 
 .photo:hover .visualizacao {
