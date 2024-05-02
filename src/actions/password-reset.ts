@@ -1,5 +1,5 @@
 "use server";
-import { PASSWORD_LOST, PASSWORD_RESET, USER_POST } from "@/functions/api";
+import { PASSWORD_RESET } from "@/functions/api";
 import apiError from "@/functions/api-error";
 import { redirect } from "next/navigation";
 

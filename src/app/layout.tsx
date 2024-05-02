@@ -3,6 +3,7 @@ import "./globals.css";
 import { type_second } from "@/functions/fonts";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { UserContextProvider } from "@/context/user-context";
 
 export const metadata: Metadata = {
   title: "Dogs next",
@@ -17,11 +18,13 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={type_second.variable}>
-        <div className="App">
-          <Header />
-          <main className="AppBody">{children}</main>
-          <Footer />
-        </div>
+        <UserContextProvider user={}>
+          <div className="App">
+            <Header />
+            <main className="AppBody">{children}</main>
+            <Footer />
+          </div>
+        </UserContextProvider>
       </body>
     </html>
   );
